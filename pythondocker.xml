@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>PythonDocker</Name>
+  <Repository>mahjongchess/pythondocker</Repository>
+  <Registry>https://hub.docker.com/r/mahjongchess/pythondocker</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>true</Privileged>
+  <Category>TestServer:</Category>
+  <ExtraSearchTerms>Python</ExtraSearchTerms>
+  <Icon>https://d1q6f0aelx0por.cloudfront.net/product-logos/library-python-logo.png</Icon>
+<Config
+      Type="Path"
+      Name="Installed Location"
+      Target="/data"
+      Default="/mnt/user/appdata/pythondocker/"
+      Mode="rw"
+      Description="Path to store the installed server files."
+      Display="always"
+      Required="true"
+      Mask="false">/mnt/user/appdata/pythondocker/</Config>
+  <Config
+      Type="Port"
+      Name="Port"
+      Target="80"
+      Default="6080"
+      Mode="tcp"
+      Description="Port for the server"
+      Display="always"
+      Required="false"
+      Mask="false">80</Config>
+</Container>
